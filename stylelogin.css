@@ -1,0 +1,105 @@
+.navbar {
+    background-color: #000000;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;   
+}
+
+/* Styling untuk membuat elemen h2 terlihat seperti tombol */
+
+.button-link h2{
+    display: inline-block;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #000000; /* Warna putih untuk judul */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px; /* Ukuran font yang lebih besar */
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+    padding: 30px; /* Menambahkan padding lebih banyak */
+    border-radius: 12px; /* Sudut yang lebih melengkung */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih dalam */
+    width: 320px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Warna teks label */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Padding yang lebih besar untuk input */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Sudut input lebih melengkung */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi untuk border dan shadow */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek bayangan saat fokus */
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px; /* Padding tombol yang lebih besar */
+    border-radius: 6px; /* Sudut tombol lebih melengkung */
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Ukuran font tombol lebih besar */
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efek mengangkat tombol saat hover */
+}
+
+p {
+    margin-top: 10px;
+    color: #333; /* Warna teks untuk pesan */
+}
+
+/* Responsiveness */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 20px; /* Menyesuaikan padding */
+    }
+}

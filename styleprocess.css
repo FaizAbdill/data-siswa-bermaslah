@@ -1,0 +1,145 @@
+/* Navbar styling */
+.navbar {
+    background-color: #000000;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.button-link h2 {
+    display: inline-block;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.logout-button {
+    position: absolute;
+    right: 20px; /* Adjust this value if needed */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%);
+}
+
+.logout-button i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/* Optional: Add hover effect for the icon */
+.logout-button:hover i {
+    color: rgb(194, 190, 190);
+}
+
+/* Reset padding dan margin default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background dan font dasar */
+body {
+    
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh; /* Tinggi minimal penuh layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styling container utama */
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 80px 20px; /* Beri margin agar tidak menyentuh tepi layar */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Lebih banyak jarak antar elemen */
+}
+
+/* Header styling */
+.font {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 600;
+    font-style:bold;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+p strong {
+    color: #000000;
+}
+
+/* Styling tombol */
+.kembali {
+    display: flex;
+    justify-content: space-evenly; /* Spasi rata antar tombol */
+    margin-top: 20px;
+}
+
+
+.kembali button {
+    background-color: #0037ff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.kembali button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .kembali button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Footer */
+
+

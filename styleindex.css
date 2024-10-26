@@ -1,0 +1,164 @@
+/* STYLE.PADA.INDEX */
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    z-index: 10;   
+}
+
+/* Style for the logout button */
+.logout-button {
+    position: absolute;
+    right: 20px; /* Adjust this value if needed */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%);
+}
+
+.logout-button i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/* Optional: Add hover effect for the icon */
+.logout-button:hover i {
+    color: rgb(194, 190, 190);
+}
+
+
+/* Styling untuk membuat elemen h2 terlihat seperti tombol */
+
+.button-link h2 {
+    display: inline-block;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.i{
+    position: right;
+}
+/* Optional: Responsif untuk mobile */
+@media screen and (max-width: 600px) {
+    .button-link h2 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* Styling dasar seperti sebelumnya */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Styling untuk judul */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+}
+
+/* Styling untuk form container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Styling untuk tabel form */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 10px;
+    vertical-align: top; /* Agar label dan input sejajar vertikal */
+}
+
+/* Styling untuk input fields dan textarea */
+input[type="text"], 
+input[type="number"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccaca;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #11c523;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0ea31d;
+}
+
+/* Styling untuk tombol Lihat Daftar */
+a button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+a button:hover {
+    background-color: #0056b3 ;
+}
+
+/* Responsive design untuk tampilan mobile */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"], a button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
